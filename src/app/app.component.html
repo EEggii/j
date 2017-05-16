@@ -1,0 +1,10 @@
+<h1>
+  {{title}}
+  <div>
+    <img src="{{imgUrlArr[selected]}}" width="200" height="200"/>
+    <input [(ngModel)]="input" />
+    <button (click)="check()">확인</button>
+    <button (click)="random()">다른 수화 보기</button>
+    <p *ngIf="checked">{{correct ? "정답!" : "오답!"}}</p>
+  </div>
+</h1>
